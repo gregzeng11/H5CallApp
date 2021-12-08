@@ -1,0 +1,2 @@
+rootProject.name = "TCICOpenAppDemo"
+include ':app'
