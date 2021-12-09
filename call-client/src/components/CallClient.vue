@@ -122,11 +122,11 @@ export default {
   name: 'CallClient',
   data() {
     return {
-      env: 'test', // 是否是浏览器pc环境
+      env: '', // 是否是浏览器pc环境
 
       userid: '',
-      token:
-        '',
+      token: '',
+      sign:'',
       classid: '',
       schoolid: '',
       urlParams: '',
@@ -194,7 +194,7 @@ export default {
       if(this.deviceType == 'windows'){
           tempScheme = this.windows.scheme;
       }
-      return `${tempScheme}://class.qcloudclass.com/${this.version}/class.html?${this.urlParams}&callid=${this.callId}`
+      return `${tempScheme}://class.qcloudclass.com/${this.version}/class.html?${this.urlParams}`
     },
 
     androidJoinRoom: function () {
@@ -251,27 +251,41 @@ export default {
     parseUrlParams() {
      this.urlParams = window.location.search.substr(1) || window.location.hash.split("?")[1];
 
-     let search = this.urlParams.split('&')
-      console.log('getUrlParams params:', this.urlParams)
+     let search = this.urlParams.split('&');
+      console.log('getUrlParams params:', this.urlParams);
 
+      let haveSign = false;
       for (let item of search) {
         let temp = item.split('=')
-        this.paramsMap[temp[0]] = temp[1]
+        this.paramsMap[temp[0]] = temp[1];
+        if(temp[0] =='sign'){
+          haveSign = true;
+          this.sign = temp[1];
+          this.token = this.sign;
+          let signParam = this.sign.split('\.')[1];
+          let decodeSign = window.atob(signParam);
+          let jsonObject = JSON.parse(decodeSign);
+          this.classid = jsonObject.class_id;
+          this.schoolid = jsonObject.school_id;
+          this.userid = jsonObject.user_id;
+          console.log("decodeSign:",decodeSign,this.classid,this.schoolid,this.userid);
+        }
       }
 
-      let token =localStorage.getItem("call_token");
-      if(token && !this.paramsMap['token']){
-        this.paramsMap['token']= token;
-        this.urlParams += '&token='+token;
+      if(!haveSign){
+       let token =localStorage.getItem("call_token");
+       if(token && !this.paramsMap['token']){
+          this.paramsMap['token']= token;
+          this.urlParams += '&token='+token;
+       }
       }
-      
+      this.urlParams += '&callid='+this.callId;
+      this.paramsMap['callid']= this.callId;
 
-      this.schoolid = this.paramsMap.schoolid ? this.paramsMap.schoolid : ''
-      this.classid = this.paramsMap.classid ? this.paramsMap.classid : ''
-      this.userid = this.paramsMap.userid ? this.paramsMap.userid : ''
-      this.token = this.paramsMap.token ? this.paramsMap.token : ''
+      if(this.paramsMap['env']){
+        this.env = this.paramsMap['env'];
+      }
 
-      this.env = this.paramsMap.env ? this.paramsMap.env : ''
       console.log('getUrlParams userid:', this.paramsMap.userid)
     },
 
@@ -671,25 +685,20 @@ export default {
           return 'windows'
         }
         getAndroidAddress()
-        //  this.env = false
         return 'android'
       }
       if (navigator.appVersion.includes('Win')) {
-        //  this.env = 'inPc'
         return 'windows'
       }
       if (navigator.appVersion.includes('Android')) {
         getAndroidAddress()
-        //  this.env = false
         return 'android'
       }
       // iOS和Mac的顺序不能变，经测试发现Mac的浏览器里会有iOS的字样
       if (navigator.appVersion.includes('iPhone')) {
-        //  this.env = false
         return 'ios'
       }
       if (navigator.appVersion.includes('iPad')) {
-        //  this.env = 'iPad'
         return 'ios'
       }
       if (
@@ -697,15 +706,12 @@ export default {
         navigator.maxTouchPoints &&
         navigator.maxTouchPoints > 1
       ) {
-        //   this.env = 'iPad'
         return 'ios'
       }
       if (navigator.appVersion.includes('Mac')) {
-        //    this.env = 'inPc'
         return 'mac'
       }
       if (navigator.userAgent.includes('Linux')) {
-        //   this.env = 'inPc'
         return 'linux'
       }
       return 'unknown'

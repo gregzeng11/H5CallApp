@@ -1,0 +1,48 @@
+PODS:
+  - Bugly (2.5.91)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.2.0)
+  - TCICSDK_Pro (1.5.0.47):
+    - Bugly
+    - Masonry
+    - TIWCache_iOS (= 1.0.0.66)
+    - TIWLogger_iOS (= 1.0.1.41)
+    - TXLiteAVSDK_Professional (= 9.3.59)
+    - YYModel
+  - TCICSDK_ReplayKit (1.0.0.37)
+  - TIWCache_iOS (1.0.0.66)
+  - TIWLogger_iOS (1.0.1.41)
+  - TXLiteAVSDK_Professional (9.3.59)
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - MBProgressHUD
+  - TCICSDK_Pro (= 1.5.0.47)
+  - TCICSDK_ReplayKit (= 1.0.0.37)
+
+SPEC REPOS:
+  trunk:
+    - Bugly
+    - Masonry
+    - MBProgressHUD
+    - TCICSDK_Pro
+    - TCICSDK_ReplayKit
+    - TIWCache_iOS
+    - TIWLogger_iOS
+    - TXLiteAVSDK_Professional
+    - YYModel
+
+SPEC CHECKSUMS:
+  Bugly: afe841bba2ea6de6d432a3c125240a5e75949c55
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  TCICSDK_Pro: 7f6a167e6736a6150a2a47105c6de5681fa12081
+  TCICSDK_ReplayKit: ca4f2e1eeaa192b5441281f222aa5ecf15f03250
+  TIWCache_iOS: 1a2950b49f6893831f445ec8da488800c9921bd0
+  TIWLogger_iOS: c08498446c21a9541203e5ef0ceff2222a07ab5d
+  TXLiteAVSDK_Professional: e55c0fc9491c3b30cb325945b4e9a8f24f6168bd
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: b35f3a691177b1f9337185c2eea6fd12b8825e45
+
+COCOAPODS: 1.10.1

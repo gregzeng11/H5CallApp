@@ -1,0 +1,47 @@
+
+body{
+  margin: 0px;
+}
+
+.video-com {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 160px;
+  height: 120px;
+}
+
+.video-com .video{
+  width: 100%;
+  height: 100%;
+}
+
+.board-com {
+  position: absolute;
+  top: 0px;
+  width: calc(100% - 160px);
+  height: 100%;
+  background-color: #ccffff;
+  font-size: 16px;
+}
+
+.board-com .white-board {
+  width: 100%;
+  height: 80%;
+}
+
+.im-com {
+  position: absolute;
+  top: 120px;
+  right: 0px;
+  width: 160px;
+  height: calc(100% - 120px);
+  background-image: url("https://main.qcloudimg.com/raw/de447276f01dedc4000158eedde0a724.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ccffcc;
+  text-align: center;
+  font-size: 16px;
+  color:#ccffff;
+}

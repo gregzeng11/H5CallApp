@@ -1,0 +1,15 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+target 'TCICWebApp' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  # use_frameworks!
+  pod 'MBProgressHUD'
+  pod 'TCICSDK_Pro', '1.5.0.47'
+end
+
+target 'ScreenKit' do
+# Comment the next line if you don't want to use dynamic frameworks
+# use_frameworks!
+pod 'TCICSDK_ReplayKit', '1.0.0.37'
+end

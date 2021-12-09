@@ -1,0 +1,796 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37A7333356AEE38EC2B7C02F /* libPods-TCICWebApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A179C60F7B7489756347ADA2 /* libPods-TCICWebApp.a */; };
+		7A0D1B492567E0C800624058 /* ReadMe.md in Resources */ = {isa = PBXBuildFile; fileRef = 7A0D1B482567E0C800624058 /* ReadMe.md */; };
+		7A10A968259C5823006169F5 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A10A967259C5823006169F5 /* ReplayKit.framework */; };
+		7A10A96C259C5823006169F5 /* SampleHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A10A96B259C5823006169F5 /* SampleHandler.m */; };
+		7A10A970259C5823006169F5 /* ScreenKit.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7A10A966259C5823006169F5 /* ScreenKit.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7A42968726CB9A3000DC976E /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA421C1250F1572000D83E0 /* Accelerate.framework */; };
+		7A42968926CB9A3A00DC976E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A42968826CB9A3A00DC976E /* libc++.tbd */; };
+		7A42968C26CB9C5600DC976E /* TICLoginViewController+UserPrivacy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A42968A26CB9C5600DC976E /* TICLoginViewController+UserPrivacy.m */; };
+		7A472F2F2563687600B23D64 /* TICAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A472F242563687600B23D64 /* TICAboutViewController.m */; };
+		7A472F302563687600B23D64 /* TICAboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A472F282563687600B23D64 /* TICAboutViewController.xib */; };
+		7A472F322563687600B23D64 /* MainPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A472F2A2563687600B23D64 /* MainPad.storyboard */; };
+		7A472F332563687600B23D64 /* TICPrivacyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A472F2B2563687600B23D64 /* TICPrivacyViewController.m */; };
+		7A472F342563687600B23D64 /* TICLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A472F2C2563687600B23D64 /* TICLoginViewController.m */; };
+		7A472F3525636DBB00B23D64 /* TICTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA421FC25105E73000D83E0 /* TICTextField.m */; };
+		7AA42155250F130E000D83E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA42154250F130E000D83E0 /* AppDelegate.m */; };
+		7AA4215E250F130E000D83E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AA4215C250F130E000D83E0 /* Main.storyboard */; };
+		7AA42160250F130F000D83E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AA4215F250F130F000D83E0 /* Assets.xcassets */; };
+		7AA42163250F130F000D83E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AA42161250F130F000D83E0 /* LaunchScreen.storyboard */; };
+		7AA42166250F130F000D83E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA42165250F130F000D83E0 /* main.m */; };
+		7AA421C2250F1572000D83E0 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA421C1250F1572000D83E0 /* Accelerate.framework */; };
+		7AA421C6250FA65E000D83E0 /* dist in Resources */ = {isa = PBXBuildFile; fileRef = 7AA421C5250FA65E000D83E0 /* dist */; };
+		7ACED1522511EAAD003BFDB8 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA421FB25105E73000D83E0 /* BaseViewController.m */; };
+		7ACED1532511EAB4003BFDB8 /* TICNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA421FE25105E73000D83E0 /* TICNavigationController.m */; };
+		7ACED1542511EACF003BFDB8 /* TICWebServiceEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA4220A25105E73000D83E0 /* TICWebServiceEngine.m */; };
+		7ACED1552511EAD3003BFDB8 /* BaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA4220925105E73000D83E0 /* BaseRequest.m */; };
+		7ACED1562511EADB003BFDB8 /* LoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA4220B25105E73000D83E0 /* LoginRequest.m */; };
+		7ACED1592511EB7F003BFDB8 /* HUDHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA421FD25105E73000D83E0 /* HUDHelper.m */; };
+		8DDE7A0E777412F17A245D54 /* libPods-ScreenKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ADC87E87C20B1E84B557A6B /* libPods-ScreenKit.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7A10A96E259C5823006169F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AA42139250F1216000D83E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A10A965259C5823006169F5;
+			remoteInfo = ScreenKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7A10A974259C5823006169F5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7A10A970259C5823006169F5 /* ScreenKit.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		923BC7862510C2EC005CF331 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		18BBD2CF6820BC330ECFA71B /* Pods-TCICWebApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCICWebApp.release.xcconfig"; path = "Target Support Files/Pods-TCICWebApp/Pods-TCICWebApp.release.xcconfig"; sourceTree = "<group>"; };
+		1B3E92CFE3456415A539D96D /* Pods-TYIC_SaaS_SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYIC_SaaS_SDK.release.xcconfig"; path = "Target Support Files/Pods-TYIC_SaaS_SDK/Pods-TYIC_SaaS_SDK.release.xcconfig"; sourceTree = "<group>"; };
+		1D6482C20533FE77D53497E4 /* Pods-TCICWebApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCICWebApp.debug.xcconfig"; path = "Target Support Files/Pods-TCICWebApp/Pods-TCICWebApp.debug.xcconfig"; sourceTree = "<group>"; };
+		250C4F0D6A8C9194DED0609C /* libPods-TCICSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TCICSDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C404DF3C50928E7CB095463 /* Pods-TYIC_Web_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYIC_Web_Demo.release.xcconfig"; path = "Target Support Files/Pods-TYIC_Web_Demo/Pods-TYIC_Web_Demo.release.xcconfig"; sourceTree = "<group>"; };
+		4008D8C60ECBFD85024808EA /* Pods-TYICWebApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYICWebApp.release.xcconfig"; path = "Target Support Files/Pods-TYICWebApp/Pods-TYICWebApp.release.xcconfig"; sourceTree = "<group>"; };
+		499F5AA9F509CFCE9EB4E63D /* Pods-TYIC_Web_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYIC_Web_Demo.debug.xcconfig"; path = "Target Support Files/Pods-TYIC_Web_Demo/Pods-TYIC_Web_Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		49F859083F7E322995D1862E /* libPods-TYIC3.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TYIC3.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50DF6FD0638E099D3FBA9E81 /* Pods-TYIC_SaaS_SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYIC_SaaS_SDK.debug.xcconfig"; path = "Target Support Files/Pods-TYIC_SaaS_SDK/Pods-TYIC_SaaS_SDK.debug.xcconfig"; sourceTree = "<group>"; };
+		55DE958DF699B45FEDEE1A1B /* Pods-TYIC_SaaS_UI_SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYIC_SaaS_UI_SDK.debug.xcconfig"; path = "Target Support Files/Pods-TYIC_SaaS_UI_SDK/Pods-TYIC_SaaS_UI_SDK.debug.xcconfig"; sourceTree = "<group>"; };
+		5ECB19DAA0BBB23CBBF87F84 /* Pods-TCICSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCICSDK.debug.xcconfig"; path = "Target Support Files/Pods-TCICSDK/Pods-TCICSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		717110FF8F02AA35E7DA0CFE /* Pods-ScreenKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenKit.release.xcconfig"; path = "Target Support Files/Pods-ScreenKit/Pods-ScreenKit.release.xcconfig"; sourceTree = "<group>"; };
+		7A0D1B482567E0C800624058 /* ReadMe.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
+		7A10A966259C5823006169F5 /* ScreenKit.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ScreenKit.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A10A967259C5823006169F5 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		7A10A96A259C5823006169F5 /* SampleHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleHandler.h; sourceTree = "<group>"; };
+		7A10A96B259C5823006169F5 /* SampleHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleHandler.m; sourceTree = "<group>"; };
+		7A10A96D259C5823006169F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A10A975259C6A3D006169F5 /* ScreenKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ScreenKit.entitlements; sourceTree = "<group>"; };
+		7A10A976259C6A5C006169F5 /* TCICWebApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TCICWebApp.entitlements; sourceTree = "<group>"; };
+		7A31CE55275FA508003FB2FB /* Scheme Open App.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Scheme Open App.md"; sourceTree = "<group>"; };
+		7A42968826CB9A3A00DC976E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		7A42968A26CB9C5600DC976E /* TICLoginViewController+UserPrivacy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TICLoginViewController+UserPrivacy.m"; sourceTree = "<group>"; };
+		7A42968B26CB9C5600DC976E /* TICLoginViewController+UserPrivacy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TICLoginViewController+UserPrivacy.h"; sourceTree = "<group>"; };
+		7A472F1825622E0B00B23D64 /* TIWLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TIWLogger.framework; path = Pods/TIWLogger_iOS/TIWLogger.framework; sourceTree = "<group>"; };
+		7A472F1C25622E8900B23D64 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
+		7A472F1E2562521800B23D64 /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libresolv.9.tbd; sourceTree = DEVELOPER_DIR; };
+		7A472F2025629F2700B23D64 /* TIWCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TIWCache.framework; path = Pods/TIWCache_iOS/TIWCache.framework; sourceTree = "<group>"; };
+		7A472F242563687600B23D64 /* TICAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TICAboutViewController.m; sourceTree = "<group>"; };
+		7A472F252563687600B23D64 /* TICPrivacyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TICPrivacyViewController.h; sourceTree = "<group>"; };
+		7A472F262563687600B23D64 /* TICAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TICAboutViewController.h; sourceTree = "<group>"; };
+		7A472F272563687600B23D64 /* TICLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TICLoginViewController.h; sourceTree = "<group>"; };
+		7A472F282563687600B23D64 /* TICAboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TICAboutViewController.xib; sourceTree = "<group>"; };
+		7A472F2A2563687600B23D64 /* MainPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainPad.storyboard; sourceTree = "<group>"; };
+		7A472F2B2563687600B23D64 /* TICPrivacyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TICPrivacyViewController.m; sourceTree = "<group>"; };
+		7A472F2C2563687600B23D64 /* TICLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TICLoginViewController.m; sourceTree = "<group>"; };
+		7A8F9B76255D296400833E7F /* TXLiteAVSDK_TRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TXLiteAVSDK_TRTC.framework; path = Pods/TXLiteAVSDK_TRTC/TXLiteAVSDK_TRTC/TXLiteAVSDK_TRTC.framework; sourceTree = "<group>"; };
+		7A8F9B7B255D29B600833E7F /* Bugly.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bugly.framework; path = Pods/Bugly/Bugly.framework; sourceTree = "<group>"; };
+		7AA42151250F130E000D83E0 /* TCICWebApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCICWebApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AA42153250F130E000D83E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7AA42154250F130E000D83E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7AA4215D250F130E000D83E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7AA4215F250F130F000D83E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7AA42162250F130F000D83E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7AA42164250F130F000D83E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AA42165250F130F000D83E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7AA421BF250F1563000D83E0 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		7AA421C1250F1572000D83E0 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		7AA421C5250FA65E000D83E0 /* dist */ = {isa = PBXFileReference; lastKnownFileType = folder; path = dist; sourceTree = "<group>"; };
+		7AA421FA25105E73000D83E0 /* TICNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TICNavigationController.h; sourceTree = "<group>"; };
+		7AA421FB25105E73000D83E0 /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		7AA421FC25105E73000D83E0 /* TICTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TICTextField.m; sourceTree = "<group>"; };
+		7AA421FD25105E73000D83E0 /* HUDHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HUDHelper.m; sourceTree = "<group>"; };
+		7AA421FE25105E73000D83E0 /* TICNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TICNavigationController.m; sourceTree = "<group>"; };
+		7AA421FF25105E73000D83E0 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		7AA4220025105E73000D83E0 /* HUDHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HUDHelper.h; sourceTree = "<group>"; };
+		7AA4220125105E73000D83E0 /* TICTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TICTextField.h; sourceTree = "<group>"; };
+		7AA4220425105E73000D83E0 /* ComMarco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComMarco.h; sourceTree = "<group>"; };
+		7AA4220625105E73000D83E0 /* TICWebServiceEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TICWebServiceEngine.h; sourceTree = "<group>"; };
+		7AA4220725105E73000D83E0 /* BaseRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseRequest.h; sourceTree = "<group>"; };
+		7AA4220825105E73000D83E0 /* LoginRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginRequest.h; sourceTree = "<group>"; };
+		7AA4220925105E73000D83E0 /* BaseRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseRequest.m; sourceTree = "<group>"; };
+		7AA4220A25105E73000D83E0 /* TICWebServiceEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TICWebServiceEngine.m; sourceTree = "<group>"; };
+		7AA4220B25105E73000D83E0 /* LoginRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginRequest.m; sourceTree = "<group>"; };
+		8DBE19A8A09D8DB265523FAF /* Pods-TYIC3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYIC3.release.xcconfig"; path = "Target Support Files/Pods-TYIC3/Pods-TYIC3.release.xcconfig"; sourceTree = "<group>"; };
+		8F1695BCEFBBD23B2B99EEC0 /* Pods-ScreenKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScreenKit.debug.xcconfig"; path = "Target Support Files/Pods-ScreenKit/Pods-ScreenKit.debug.xcconfig"; sourceTree = "<group>"; };
+		9ADC87E87C20B1E84B557A6B /* libPods-ScreenKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ScreenKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A179C60F7B7489756347ADA2 /* libPods-TCICWebApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TCICWebApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8611814FF44D7693ACFBC6D /* Pods-TCICSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCICSDK.release.xcconfig"; path = "Target Support Files/Pods-TCICSDK/Pods-TCICSDK.release.xcconfig"; sourceTree = "<group>"; };
+		BF15B2319ECC617E452E2125 /* Pods-TYIC_SaaS_UI_SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYIC_SaaS_UI_SDK.release.xcconfig"; path = "Target Support Files/Pods-TYIC_SaaS_UI_SDK/Pods-TYIC_SaaS_UI_SDK.release.xcconfig"; sourceTree = "<group>"; };
+		C0956A778DDCD897B055A0FA /* Pods-TYIC3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYIC3.debug.xcconfig"; path = "Target Support Files/Pods-TYIC3/Pods-TYIC3.debug.xcconfig"; sourceTree = "<group>"; };
+		CE33E9F38BE92C6F202E4A31 /* Pods-TYICWebApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TYICWebApp.debug.xcconfig"; path = "Target Support Files/Pods-TYICWebApp/Pods-TYICWebApp.debug.xcconfig"; sourceTree = "<group>"; };
+		DE465FC0C93B6F94085D9C7A /* libPods-TYIC_Web_Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TYIC_Web_Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5A62764FF4385E34A068767 /* libPods-TYIC_SaaS_UI_SDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TYIC_SaaS_UI_SDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A10A963259C5823006169F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A42968926CB9A3A00DC976E /* libc++.tbd in Frameworks */,
+				7A42968726CB9A3000DC976E /* Accelerate.framework in Frameworks */,
+				7A10A968259C5823006169F5 /* ReplayKit.framework in Frameworks */,
+				8DDE7A0E777412F17A245D54 /* libPods-ScreenKit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AA4214E250F130E000D83E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AA421C2250F1572000D83E0 /* Accelerate.framework in Frameworks */,
+				37A7333356AEE38EC2B7C02F /* libPods-TCICWebApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7A10A969259C5823006169F5 /* ScreenKit */ = {
+			isa = PBXGroup;
+			children = (
+				7A10A975259C6A3D006169F5 /* ScreenKit.entitlements */,
+				7A10A96A259C5823006169F5 /* SampleHandler.h */,
+				7A10A96B259C5823006169F5 /* SampleHandler.m */,
+				7A10A96D259C5823006169F5 /* Info.plist */,
+			);
+			path = ScreenKit;
+			sourceTree = "<group>";
+		};
+		7AA42138250F1216000D83E0 = {
+			isa = PBXGroup;
+			children = (
+				7A31CE55275FA508003FB2FB /* Scheme Open App.md */,
+				7A0D1B482567E0C800624058 /* ReadMe.md */,
+				7AA421F825105E73000D83E0 /* Common */,
+				7AA42152250F130E000D83E0 /* TCICWebApp */,
+				7A10A969259C5823006169F5 /* ScreenKit */,
+				7AA42143250F1216000D83E0 /* Products */,
+				DFE925019EFE71E82C0221C5 /* Pods */,
+				D4A6A90B233287ECF9CBDA35 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7AA42143250F1216000D83E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7AA42151250F130E000D83E0 /* TCICWebApp.app */,
+				7A10A966259C5823006169F5 /* ScreenKit.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7AA42152250F130E000D83E0 /* TCICWebApp */ = {
+			isa = PBXGroup;
+			children = (
+				7A42968B26CB9C5600DC976E /* TICLoginViewController+UserPrivacy.h */,
+				7A42968A26CB9C5600DC976E /* TICLoginViewController+UserPrivacy.m */,
+				7A10A976259C6A5C006169F5 /* TCICWebApp.entitlements */,
+				7A472F2A2563687600B23D64 /* MainPad.storyboard */,
+				7A472F262563687600B23D64 /* TICAboutViewController.h */,
+				7A472F242563687600B23D64 /* TICAboutViewController.m */,
+				7A472F282563687600B23D64 /* TICAboutViewController.xib */,
+				7A472F272563687600B23D64 /* TICLoginViewController.h */,
+				7A472F2C2563687600B23D64 /* TICLoginViewController.m */,
+				7A472F252563687600B23D64 /* TICPrivacyViewController.h */,
+				7A472F2B2563687600B23D64 /* TICPrivacyViewController.m */,
+				7AA421C5250FA65E000D83E0 /* dist */,
+				7AA42153250F130E000D83E0 /* AppDelegate.h */,
+				7AA42154250F130E000D83E0 /* AppDelegate.m */,
+				7AA4215C250F130E000D83E0 /* Main.storyboard */,
+				7AA4215F250F130F000D83E0 /* Assets.xcassets */,
+				7AA42161250F130F000D83E0 /* LaunchScreen.storyboard */,
+				7AA42164250F130F000D83E0 /* Info.plist */,
+				7AA42165250F130F000D83E0 /* main.m */,
+			);
+			path = TCICWebApp;
+			sourceTree = "<group>";
+		};
+		7AA421F825105E73000D83E0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				7AA421F925105E73000D83E0 /* UI */,
+				7AA4220425105E73000D83E0 /* ComMarco.h */,
+				7AA4220525105E73000D83E0 /* webservice */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		7AA421F925105E73000D83E0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				7AA421FA25105E73000D83E0 /* TICNavigationController.h */,
+				7AA421FB25105E73000D83E0 /* BaseViewController.m */,
+				7AA421FC25105E73000D83E0 /* TICTextField.m */,
+				7AA421FD25105E73000D83E0 /* HUDHelper.m */,
+				7AA421FE25105E73000D83E0 /* TICNavigationController.m */,
+				7AA421FF25105E73000D83E0 /* BaseViewController.h */,
+				7AA4220025105E73000D83E0 /* HUDHelper.h */,
+				7AA4220125105E73000D83E0 /* TICTextField.h */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		7AA4220525105E73000D83E0 /* webservice */ = {
+			isa = PBXGroup;
+			children = (
+				7AA4220625105E73000D83E0 /* TICWebServiceEngine.h */,
+				7AA4220A25105E73000D83E0 /* TICWebServiceEngine.m */,
+				7AA4220725105E73000D83E0 /* BaseRequest.h */,
+				7AA4220925105E73000D83E0 /* BaseRequest.m */,
+				7AA4220825105E73000D83E0 /* LoginRequest.h */,
+				7AA4220B25105E73000D83E0 /* LoginRequest.m */,
+			);
+			path = webservice;
+			sourceTree = "<group>";
+		};
+		D4A6A90B233287ECF9CBDA35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A42968826CB9A3A00DC976E /* libc++.tbd */,
+				7A472F2025629F2700B23D64 /* TIWCache.framework */,
+				7A472F1E2562521800B23D64 /* libresolv.9.tbd */,
+				7A472F1C25622E8900B23D64 /* libc++.tbd */,
+				7A472F1825622E0B00B23D64 /* TIWLogger.framework */,
+				7A8F9B7B255D29B600833E7F /* Bugly.framework */,
+				7A8F9B76255D296400833E7F /* TXLiteAVSDK_TRTC.framework */,
+				7AA421BF250F1563000D83E0 /* Accelerate.framework */,
+				7AA421C1250F1572000D83E0 /* Accelerate.framework */,
+				49F859083F7E322995D1862E /* libPods-TYIC3.a */,
+				F5A62764FF4385E34A068767 /* libPods-TYIC_SaaS_UI_SDK.a */,
+				250C4F0D6A8C9194DED0609C /* libPods-TCICSDK.a */,
+				DE465FC0C93B6F94085D9C7A /* libPods-TYIC_Web_Demo.a */,
+				A179C60F7B7489756347ADA2 /* libPods-TCICWebApp.a */,
+				7A10A967259C5823006169F5 /* ReplayKit.framework */,
+				9ADC87E87C20B1E84B557A6B /* libPods-ScreenKit.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFE925019EFE71E82C0221C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE33E9F38BE92C6F202E4A31 /* Pods-TYICWebApp.debug.xcconfig */,
+				4008D8C60ECBFD85024808EA /* Pods-TYICWebApp.release.xcconfig */,
+				50DF6FD0638E099D3FBA9E81 /* Pods-TYIC_SaaS_SDK.debug.xcconfig */,
+				1B3E92CFE3456415A539D96D /* Pods-TYIC_SaaS_SDK.release.xcconfig */,
+				499F5AA9F509CFCE9EB4E63D /* Pods-TYIC_Web_Demo.debug.xcconfig */,
+				3C404DF3C50928E7CB095463 /* Pods-TYIC_Web_Demo.release.xcconfig */,
+				C0956A778DDCD897B055A0FA /* Pods-TYIC3.debug.xcconfig */,
+				8DBE19A8A09D8DB265523FAF /* Pods-TYIC3.release.xcconfig */,
+				55DE958DF699B45FEDEE1A1B /* Pods-TYIC_SaaS_UI_SDK.debug.xcconfig */,
+				BF15B2319ECC617E452E2125 /* Pods-TYIC_SaaS_UI_SDK.release.xcconfig */,
+				5ECB19DAA0BBB23CBBF87F84 /* Pods-TCICSDK.debug.xcconfig */,
+				A8611814FF44D7693ACFBC6D /* Pods-TCICSDK.release.xcconfig */,
+				1D6482C20533FE77D53497E4 /* Pods-TCICWebApp.debug.xcconfig */,
+				18BBD2CF6820BC330ECFA71B /* Pods-TCICWebApp.release.xcconfig */,
+				8F1695BCEFBBD23B2B99EEC0 /* Pods-ScreenKit.debug.xcconfig */,
+				717110FF8F02AA35E7DA0CFE /* Pods-ScreenKit.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A10A965259C5823006169F5 /* ScreenKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A10A971259C5823006169F5 /* Build configuration list for PBXNativeTarget "ScreenKit" */;
+			buildPhases = (
+				EA5DDE45BC8FC6F57AB520DF /* [CP] Check Pods Manifest.lock */,
+				7A10A962259C5823006169F5 /* Sources */,
+				7A10A963259C5823006169F5 /* Frameworks */,
+				7A10A964259C5823006169F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScreenKit;
+			productName = ScreenKit;
+			productReference = 7A10A966259C5823006169F5 /* ScreenKit.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		7AA42150250F130E000D83E0 /* TCICWebApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AA42167250F130F000D83E0 /* Build configuration list for PBXNativeTarget "TCICWebApp" */;
+			buildPhases = (
+				4ADAEF062E87CF5E55145390 /* [CP] Check Pods Manifest.lock */,
+				7AA4214D250F130E000D83E0 /* Sources */,
+				7AA4214E250F130E000D83E0 /* Frameworks */,
+				7AA4214F250F130E000D83E0 /* Resources */,
+				923BC7862510C2EC005CF331 /* Embed Frameworks */,
+				7A10A974259C5823006169F5 /* Embed App Extensions */,
+				4FFF6F2363784A3038B79C35 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A10A96F259C5823006169F5 /* PBXTargetDependency */,
+			);
+			name = TCICWebApp;
+			productName = TYICWebApp;
+			productReference = 7AA42151250F130E000D83E0 /* TCICWebApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7AA42139250F1216000D83E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "陈耀武";
+				TargetAttributes = {
+					7A10A965259C5823006169F5 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					7AA42150250F130E000D83E0 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = 7AA4213C250F1216000D83E0 /* Build configuration list for PBXProject "TCICWebApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7AA42138250F1216000D83E0;
+			productRefGroup = 7AA42143250F1216000D83E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7AA42150250F130E000D83E0 /* TCICWebApp */,
+				7A10A965259C5823006169F5 /* ScreenKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A10A964259C5823006169F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AA4214F250F130E000D83E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AA421C6250FA65E000D83E0 /* dist in Resources */,
+				7A472F322563687600B23D64 /* MainPad.storyboard in Resources */,
+				7AA42163250F130F000D83E0 /* LaunchScreen.storyboard in Resources */,
+				7AA42160250F130F000D83E0 /* Assets.xcassets in Resources */,
+				7A472F302563687600B23D64 /* TICAboutViewController.xib in Resources */,
+				7AA4215E250F130E000D83E0 /* Main.storyboard in Resources */,
+				7A0D1B492567E0C800624058 /* ReadMe.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4ADAEF062E87CF5E55145390 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TCICWebApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FFF6F2363784A3038B79C35 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TCICWebApp/Pods-TCICWebApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TCICWebApp/Pods-TCICWebApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TCICWebApp/Pods-TCICWebApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA5DDE45BC8FC6F57AB520DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScreenKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A10A962259C5823006169F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A10A96C259C5823006169F5 /* SampleHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7AA4214D250F130E000D83E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A42968C26CB9C5600DC976E /* TICLoginViewController+UserPrivacy.m in Sources */,
+				7ACED1522511EAAD003BFDB8 /* BaseViewController.m in Sources */,
+				7A472F3525636DBB00B23D64 /* TICTextField.m in Sources */,
+				7ACED1532511EAB4003BFDB8 /* TICNavigationController.m in Sources */,
+				7A472F332563687600B23D64 /* TICPrivacyViewController.m in Sources */,
+				7ACED1552511EAD3003BFDB8 /* BaseRequest.m in Sources */,
+				7A472F2F2563687600B23D64 /* TICAboutViewController.m in Sources */,
+				7AA42155250F130E000D83E0 /* AppDelegate.m in Sources */,
+				7ACED1592511EB7F003BFDB8 /* HUDHelper.m in Sources */,
+				7ACED1542511EACF003BFDB8 /* TICWebServiceEngine.m in Sources */,
+				7A472F342563687600B23D64 /* TICLoginViewController.m in Sources */,
+				7AA42166250F130F000D83E0 /* main.m in Sources */,
+				7ACED1562511EADB003BFDB8 /* LoginRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7A10A96F259C5823006169F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A10A965259C5823006169F5 /* ScreenKit */;
+			targetProxy = 7A10A96E259C5823006169F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7AA4215C250F130E000D83E0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7AA4215D250F130E000D83E0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7AA42161250F130F000D83E0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7AA42162250F130F000D83E0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7A10A972259C5823006169F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F1695BCEFBBD23B2B99EEC0 /* Pods-ScreenKit.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ScreenKit/ScreenKit.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y9PT5KD6V4;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = ScreenKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.cloudclass.house.screenkit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7A10A973259C5823006169F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 717110FF8F02AA35E7DA0CFE /* Pods-ScreenKit.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ScreenKit/ScreenKit.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FN2V63AD2J;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = ScreenKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.tic.courseinair.ScreenKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7AA42148250F1216000D83E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7AA42149250F1216000D83E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7AA42168250F130F000D83E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D6482C20533FE77D53497E4 /* Pods-TCICWebApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TCICWebApp/TCICWebApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = Y9PT5KD6V4;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = TCICWebApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.cloudclass.house;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7AA42169250F130F000D83E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18BBD2CF6820BC330ECFA71B /* Pods-TCICWebApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TCICWebApp/TICWebAppRelease.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = FN2V63AD2J;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = TCICWebApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.tic.courseinair;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = com.tencent.tic.courseinair_Production_SignProvision;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A10A971259C5823006169F5 /* Build configuration list for PBXNativeTarget "ScreenKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A10A972259C5823006169F5 /* Debug */,
+				7A10A973259C5823006169F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AA4213C250F1216000D83E0 /* Build configuration list for PBXProject "TCICWebApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AA42148250F1216000D83E0 /* Debug */,
+				7AA42149250F1216000D83E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AA42167250F130F000D83E0 /* Build configuration list for PBXNativeTarget "TCICWebApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AA42168250F130F000D83E0 /* Debug */,
+				7AA42169250F130F000D83E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7AA42139250F1216000D83E0 /* Project object */;
+}

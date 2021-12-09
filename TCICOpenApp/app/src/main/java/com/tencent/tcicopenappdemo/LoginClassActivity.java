@@ -32,6 +32,7 @@ public class LoginClassActivity extends AppCompatActivity implements View.OnClic
     private String userid;
     private String token;
     private String env ="release";
+    private String sign;
     private Map<String, String> customParams = new HashMap<>();
 
     @Override
@@ -92,9 +93,32 @@ public class LoginClassActivity extends AppCompatActivity implements View.OnClic
             token = value;
         } else if (key.equals("env")) {
             env = value;
-        } else {
+        } else if (key.equals("sign")) {
+            sign = value;
+        }else {
             customParams.put(key, value);
         }
+    }
+
+    private void signLoginLaunchInActivity(String sign) {
+        Intent intent = new Intent(com.tencent.tcicopenappdemo.LoginClassActivity.this,
+                TCICClassActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+        Bundle bundle = new Bundle();
+
+
+        TCICClassConfig initConfig = new TCICClassConfig.Builder()
+                .deviceType(Utils.isTablet(com.tencent.tcicopenappdemo.LoginClassActivity.this)
+                        ? TCICConstants.DEVICE_TABLET
+                        : TCICConstants.DEVICE_PHONE)
+                .sign(sign)
+                .preferPortrait(false)
+                .coreEnv(env.equals("release") ? "" : env)
+                .build();
+        bundle.putParcelable(TCICConstants.KEY_INIT_CONFIG, initConfig);
+
+        intent.putExtras(bundle);
+        startActivity(intent);
     }
 
     private void enterClassroom() {
@@ -127,7 +151,12 @@ public class LoginClassActivity extends AppCompatActivity implements View.OnClic
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_login:
-                enterClassroom();
+                //sign登录方式
+                if (!TextUtils.isEmpty(sign)) {
+                    signLoginLaunchInActivity(sign);
+                } else {
+                    enterClassroom();
+                }
                 break;
         }
     }
